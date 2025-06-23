@@ -27,9 +27,7 @@ corpus = [
 - Computed **raw term frequencies (TF)** without normalization.
 - Calculated **inverse document frequency (IDF)** using the smoothed formula:
 
-  \[
-  \text{IDF}(t) = \log\left(\frac{1 + N}{1 + \text{DF}(t)}\right) + 1
-  \]
+**IDF(t)** = log((1 + N) / (1 + DF(t))) + 1
 
 - Applied **L2 normalization** to the final TF-IDF vectors.
 
@@ -71,4 +69,3 @@ This behavior is intentional in TF-IDF:
 - ✅ My **manual TF-IDF implementation** exactly matches the output of `TfidfVectorizer` from scikit-learn.
 - ✅ My **manual TF computation** exactly matches the output of `CountVectorizer`.
 
-This confirms a correct understanding and implementation of both algorithms.
